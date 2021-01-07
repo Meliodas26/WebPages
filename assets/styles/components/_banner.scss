@@ -1,0 +1,15 @@
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	height: 800px;
+	background-image: url('../img/banner.jpg');
+	opacity: .8;
+	div{
+		text-align: center;
+		h2{
+			font-weight: lighter;
+		}
+	}
+}
