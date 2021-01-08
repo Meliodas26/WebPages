@@ -1,4 +1,14 @@
 @import "base";
-@import "header";
 
-@import "components/card"
+@import "segments/header";
+@import "segments/generic";
+@import "segments/events";
+@import "segments/footer";
+
+@import "components/navbar";
+@import "components/banner";
+@import "components/card";
+@import "components/event";
+@import "components/note";
+
+@import "elements/titles.scss";

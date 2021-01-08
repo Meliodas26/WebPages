@@ -14,18 +14,91 @@ header {
 }
 
 section {
-  display: flex;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-#social-networks {
+.social-networks {
   height: 80%;
   text-align: right;
   font-size: 40px;
 }
-#social-networks a {
+.social-networks a {
   color: #2374AB;
   margin: 0 5px;
+}
+
+.generic-1 {
+  padding: 1rem 0;
+}
+
+.events {
+  padding: 1rem 0;
+  background-color: #F5F5F5;
+}
+.events .title {
+  border-bottom: #363636 3px solid;
+  display: inline-flex;
+}
+.events .elements {
+  padding: 1rem 0;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: #F5F5F5;
+}
+.events .elements .event {
+  display: inline-block;
+}
+
+footer {
+  background-color: #393939;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+footer .left, footer .right {
+  width: 25%;
+}
+footer .left .social-networks {
+  text-align: left;
+  font-size: 25px;
+}
+footer .left .social-networks a {
+  color: #fff;
+}
+footer .left .link {
+  margin: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+footer .left .link svg {
+  margin: 0 0.5rem;
+}
+footer .center {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+footer .center h3 {
+  font-weight: lighter;
+}
+footer .right {
+  text-align: right;
+}
+footer .right h6 {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+footer .right h6, footer .right a {
+  color: #fff;
+}
+footer .right div {
+  text-align: right;
+}
+footer .right a {
+  font-size: 12px;
 }
 
 nav {
@@ -112,6 +185,73 @@ nav ul li a {
 .medium-card .information-card button {
   width: 165px;
   height: 25px;
+}
+
+.event {
+  margin: 1rem;
+  width: 450px;
+  height: 380px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px #999;
+  background-color: white;
+}
+.event .img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.event .img .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 150px;
+  background-color: #FF7474;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.event .information {
+  margin: 1rem;
+  white-space: normal;
+}
+.event .information div {
+  text-align: right;
+}
+.event .information div a {
+  text-transform: uppercase;
+  color: #D50000;
+  text-decoration: none;
+}
+
+.note {
+  display: block;
+  margin: 1rem;
+  padding: 0 1rem;
+  max-width: 365px;
+  width: 365px;
+  height: 175px;
+}
+
+.blue-note {
+  background-color: #EBF4FF;
+}
+
+.yellow-note {
+  background-color: #FFFDEB;
+}
+
+.left-note {
+  margin-left: 0;
+}
+
+.right-note {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

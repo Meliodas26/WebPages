@@ -1,0 +1,39 @@
+footer{
+	background-color: #393939;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	.left,.right{
+		width: 25%;
+	}
+	.left{
+		.social-networks{
+			text-align: left;
+			font-size: 25px;
+			a{color: #fff;}
+		}
+		.link{
+			margin: 1rem 0;
+			color: #fff;
+			text-decoration: none;
+			svg{
+				margin: 0 .5rem;
+			}
+		}
+	}
+	.center{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		h3{font-weight: lighter;}
+	}
+	.right{
+		text-align: right;
+		h6{margin: .5rem 0; font-size: 14px;}
+		h6,a{color: #fff;}
+		div{text-align: right;}
+		a{font-size: 12px;}
+	}
+}
