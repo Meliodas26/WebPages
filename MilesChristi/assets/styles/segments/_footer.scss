@@ -9,15 +9,23 @@ footer{
 	.left{
 		.social-networks{
 			text-align: left;
-			font-size: 25px;
-			a{color: #fff;}
+			div{
+				background-color: #FFF;
+				width: 40px;
+				height: 40px;
+				font-size: 20px;
+				a{color: #393939;}
+			}
 		}
-		.link{
-			margin: 1rem 0;
-			color: #fff;
+		a{
 			text-decoration: none;
-			svg{
-				margin: 0 .5rem;
+			.link{
+				margin: 1rem 0;
+				color: #fff;
+				text-decoration: none;
+				svg{
+					margin: 0 .5rem;
+				}
 			}
 		}
 	}
