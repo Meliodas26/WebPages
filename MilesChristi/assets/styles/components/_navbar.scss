@@ -5,6 +5,8 @@ nav{
 	ul{
 		margin: 0;
 		padding: 0;
+		width: 100%;
+		text-align: end;
 		li{
 			display: inline;
 			margin: 0 10px;
@@ -14,8 +16,29 @@ nav{
 			a{
 				text-decoration: none;
 				font-size: 20px;
-				color: #000;
+				color: #FFF;
 			}
+		}
+	}
+}
+
+#nav-mobile{
+	background-color: #393939;;
+	flex-direction: column;
+	div{
+		height: 50px;
+		display: block;
+		text-align: right;
+		margin: 1rem;
+		a{color: #FFF; font-size: 30px;}
+	}
+	ul{
+		list-style: none;
+		a{
+			color: #FFF;
+			text-decoration: none;
+			font-size: 25px;
+			li{margin: 2.5rem 0;}
 		}
 	}
 }
