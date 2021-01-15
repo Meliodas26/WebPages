@@ -1,9 +1,9 @@
-<header id="header">
+<header class="header">
 	<div class="top">
 		<div class="logo">
-			<a class="component" href="./"><img src="./assets/img/logo.png" alt="logo"></a>
+			<a href="./"><img src="./assets/img/logo.png" alt="logo"></a>
 		</div>
-		<div class="component component-mobile">
+		<div class="component">
 			<div class="social-networks">
 				<a href="#"><div><i class="fab fa-youtube"></i></div></a>
 				<a href="#"><div><i class="fab fa-instagram"></i></div></a>
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bottom">
+	<div class="bottom" id="hidden-desktop">
 		<h1>Lorem Ipsum Dolor</h1>
 		<div><h3>Sit cupidatat nisi aliqua adipisicing culpa sunt id veniam. Consectetur amet ea dolor laborum sit aliqua dolor nulla anim.</h3></div>
 	</div>
@@ -43,4 +43,4 @@
 	</ul>
 </div>
 
-<script src="assets/js/control-views.js"></script>
+<script src="assets/js/navbar-mobile.js"></script>

@@ -1,0 +1,36 @@
+.exercise-1,.exercise-2{
+	margin: 1rem;
+	display: flex;
+	align-items: flex-end;
+	height: 400px;
+	box-shadow: 2px 2px 2px #999;
+	background-repeat: no-repeat, repeat;
+	background-size: cover;
+	background-position: center;
+	.information{
+		height: 50%;
+		background-color: rgba(0,0,0,0.5);
+		h3,p,button{color: #fff;}
+		h3,p,button{margin-left: .5rem!important; margin-right: .5rem!important;}
+		h3,button{margin-top: 1rem; margin-bottom: 0;}
+		p{margin-top: 1rem; margin-bottom: 1rem;}
+
+		button{
+			width: 200px;
+			height: 40px;
+			font-weight: bold;
+			background-color: #2374AB;
+			border-radius: 10px;
+			border-width: 0;
+		}
+	}
+}
+.exercise-1{background-image: url('../img/prueba.png');}
+.exercise-2{background-image: url('../img/exercise-2.png');}
+@media(max-width: 1199px){
+	.exercise-1,.exercise-2{
+		h3{margin-top: 1rem!important;}
+		button{margin-top: 0!important; margin-bottom: 0!important;}
+		.information{width: 100%;}
+	}
+}

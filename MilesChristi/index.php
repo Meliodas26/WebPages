@@ -9,12 +9,13 @@
 	</head>
 	<body>
 		<?php
+			include("./main-page/components/navbar.php");
 			include("header.php");
-			//include("./main-page/banner.php");
-			//include("./main-page/exercises.php");
+			include("./main-page/exercises.php");
 			//include("./main-page/events.php");
-			//include("./main-page/notes.php");
+			include("./main-page/blogs.php");
 			include("footer.php");
 		?>
+		<script src="assets/js/navbar.js"></script>
 	</body>
 </html>

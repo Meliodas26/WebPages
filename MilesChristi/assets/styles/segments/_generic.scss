@@ -1,3 +1,21 @@
 .generic-1{
-	padding:1rem 0;
+	display: flex;
 }
+@media(max-width: 1199px){.generic-1{flex-direction: column;}}
+
+.generic-2{
+	.title{
+		margin: 0 1rem;
+		//.triangle{width: 50px; background-color: #A8D4F2; margin-right: 1rem;}
+		.center-triangle{display: flex; align-items: center;}
+		.triangle{
+			width: 0;
+			height: 0;
+			border-top: 20px solid #A8D4F2;
+			border-right: 40px solid transparent;
+			margin-right: 1rem;
+		}
+	}
+	.title,.content{display: flex;}
+}
+@media(max-width: 1199px){.generic-2{.content{flex-direction: column;}}}

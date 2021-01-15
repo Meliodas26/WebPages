@@ -2,34 +2,28 @@ body {
   margin: 0;
 }
 
-.component {
-  margin: 0 1rem;
-  width: 100%;
-}
-
-section {
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
 header {
   background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1.5rem 1rem;
-  opacity: 0.9;
   height: 720px;
 }
 header .top {
   display: flex;
 }
-header .top .social-networks {
+header .top .component {
+  width: 100%;
+}
+header .top .component .social-networks {
   height: 70%;
   text-align: right;
 }
-header .top .social-networks a {
+header .top .component .social-networks a {
   font-size: 20px;
   color: #393939;
 }
-header .top .social-networks a div {
+header .top .component .social-networks a div {
   display: inline-flex;
   background-color: #FFF;
   border-radius: 25px;
@@ -56,61 +50,68 @@ header .bottom div {
 }
 
 @media (max-width: 1200px) {
-  header {
-    align-items: flex-end;
-    text-align: right;
-    justify-content: end;
-  }
-
-  .social-networks, nav {
+  header .social-networks, header nav {
     display: none !important;
   }
-
-  .top {
-    justify-content: right;
-    text-align: right;
-    align-items: right;
+  header .logo img {
+    width: 175px;
   }
-
-  .logo {
-    width: 300px;
-  }
-  .logo img {
-    width: 225px;
-  }
-
-  .component-mobile {
+  header .component {
     align-items: center;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
-
-  .view-nav-mobile {
+  header .view-nav-mobile {
     display: inline-block !important;
     justify-content: end;
   }
-  .view-nav-mobile a {
+  header .view-nav-mobile a {
     color: #FFF;
     font-size: 50px;
   }
-
-  h1 {
+  header h1 {
     font-size: calc(1.5em + 1vw);
     text-align: center;
   }
-
-  h3 {
+  header h3 {
     font-size: calc(.5em + 1vw);
   }
-
-  nav {
+  header nav {
     flex-direction: column;
   }
 }
 .generic-1 {
-  padding: 1rem 0;
+  display: flex;
 }
 
+@media (max-width: 1199px) {
+  .generic-1 {
+    flex-direction: column;
+  }
+}
+.generic-2 .title {
+  margin: 0 1rem;
+}
+.generic-2 .title .center-triangle {
+  display: flex;
+  align-items: center;
+}
+.generic-2 .title .triangle {
+  width: 0;
+  height: 0;
+  border-top: 20px solid #A8D4F2;
+  border-right: 40px solid transparent;
+  margin-right: 1rem;
+}
+.generic-2 .title, .generic-2 .content {
+  display: flex;
+}
+
+@media (max-width: 1199px) {
+  .generic-2 .content {
+    flex-direction: column;
+  }
+}
 .events {
   padding: 1rem 0;
   background-color: #F5F5F5;
@@ -220,120 +221,151 @@ footer .right a {
     display: none;
   }
 }
-nav {
+header nav {
   display: flex;
   height: 20%;
   justify-content: center;
 }
-nav ul {
+header nav ul {
   margin: 0;
   padding: 0;
   width: 100%;
   text-align: end;
 }
-nav ul li {
+header nav ul li {
   display: inline;
   margin: 0 10px;
 }
-nav ul li :hover {
+header nav ul li :hover {
   color: #D70030;
 }
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   font-size: 20px;
   color: #FFF;
 }
-
-#nav-mobile {
+header #nav-mobile {
   background-color: #393939;
   flex-direction: column;
 }
-#nav-mobile div {
+header #nav-mobile div {
   height: 50px;
   display: block;
   text-align: right;
   margin: 1rem;
 }
-#nav-mobile div a {
+header #nav-mobile div a {
   color: #FFF;
   font-size: 30px;
 }
-#nav-mobile ul {
+header #nav-mobile ul {
   list-style: none;
 }
-#nav-mobile ul a {
+header #nav-mobile ul a {
   color: #FFF;
   text-decoration: none;
   font-size: 25px;
 }
-#nav-mobile ul a li {
+header #nav-mobile ul a li {
   margin: 2.5rem 0;
 }
 
-.banner {
+#navbar-desktop {
+  position: fixed;
+  width: 100%;
+  background-color: #363636;
+  color: white;
+}
+#navbar-desktop a {
+  padding: 1rem;
+}
+#navbar-desktop ul {
+  width: 100%;
+  justify-content: flex-end;
+  list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #fff;
-  height: 800px;
-  background-image: url("../img/banner.jpg");
-  opacity: 0.8;
 }
-.banner div {
-  text-align: center;
+#navbar-desktop ul a {
+  color: white;
+  text-decoration: none;
+  padding: 0;
 }
-.banner div h2 {
-  font-weight: lighter;
+#navbar-desktop ul a :hover {
+  color: #D70030;
+}
+#navbar-desktop ul li {
+  margin: 0 1rem;
+}
+#navbar-desktop ul li :hover {
+  color: #D70030;
+}
+#navbar-desktop ul .button {
+  display: flex;
+  align-items: center;
+  background-color: #2374AB;
+  margin-right: 1rem;
+  height: 50px;
 }
 
-.big-card, .medium-card {
+.exercise-1, .exercise-2 {
+  margin: 1rem;
   display: flex;
-  width: 650px;
+  align-items: flex-end;
+  height: 400px;
   box-shadow: 2px 2px 2px #999;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
 }
-.big-card .img-card, .medium-card .img-card {
-  width: 30%;
-  background-image: url("../img/card.png");
+.exercise-1 .information, .exercise-2 .information {
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.big-card .information-card, .medium-card .information-card {
-  width: 70%;
-}
-.big-card .information-card button, .medium-card .information-card button {
-  font-weight: bold;
+.exercise-1 .information h3, .exercise-1 .information p, .exercise-1 .information button, .exercise-2 .information h3, .exercise-2 .information p, .exercise-2 .information button {
   color: #fff;
+}
+.exercise-1 .information h3, .exercise-1 .information p, .exercise-1 .information button, .exercise-2 .information h3, .exercise-2 .information p, .exercise-2 .information button {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+.exercise-1 .information h3, .exercise-1 .information button, .exercise-2 .information h3, .exercise-2 .information button {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.exercise-1 .information p, .exercise-2 .information p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.exercise-1 .information button, .exercise-2 .information button {
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
   background-color: #2374AB;
-  border-radius: 8px;
+  border-radius: 10px;
   border-width: 0;
 }
 
-.big-card {
-  height: 300px;
-}
-.big-card .information-card {
-  padding: 1rem;
-}
-.big-card .information-card .text-card {
-  height: 80%;
-}
-.big-card .information-card button {
-  width: 100%;
-  height: 40px;
+.exercise-1 {
+  background-image: url("../img/prueba.png");
 }
 
-.medium-card {
-  height: 140px;
-}
-.medium-card .information-card {
-  padding: 0.5rem;
-}
-.medium-card .information-card .text-card {
-  font-size: 12px;
-}
-.medium-card .information-card button {
-  width: 165px;
-  height: 25px;
+.exercise-2 {
+  background-image: url("../img/exercise-2.png");
 }
 
+@media (max-width: 1199px) {
+  .exercise-1 h3, .exercise-2 h3 {
+    margin-top: 1rem !important;
+  }
+  .exercise-1 button, .exercise-2 button {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .exercise-1 .information, .exercise-2 .information {
+    width: 100%;
+  }
+}
 .event {
   margin: 1rem;
   width: 450px;
@@ -376,29 +408,60 @@ nav ul li a {
   text-decoration: none;
 }
 
-.note {
-  display: block;
+.blog {
+  display: flex;
+  height: 300px;
   margin: 1rem;
-  padding: 0 1rem;
-  max-width: 365px;
-  width: 365px;
-  height: 175px;
+}
+.blog div {
+  width: 50%;
+}
+.blog .img {
+  background-image: url("../img/blog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog .information {
+  margin: 0.5rem 1rem;
+}
+.blog .information h6 {
+  font-size: 14px;
+  margin: 0;
+  color: #ADADAD;
+}
+.blog .information p {
+  font-size: 18px;
+  color: #363636;
+}
+.blog .information button {
+  display: flex;
+  padding: 0rem;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+.blog .information button div {
+  width: 98%;
 }
 
-.blue-note {
-  background-color: #EBF4FF;
-}
-
-.yellow-note {
-  background-color: #FFFDEB;
-}
-
-.left-note {
-  margin-left: 0;
-}
-
-.right-note {
-  margin-right: 0;
+@media (max-width: 1199px) {
+  .blog {
+    height: 450px;
+    flex-direction: column;
+  }
+  .blog .img, .blog .information {
+    width: 100%;
+    height: 50%;
+  }
+  .blog .information {
+    margin: 1rem 0;
+  }
+  .blog button {
+    padding-right: 1rem !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
