@@ -1,9 +1,9 @@
 <footer>
 		<div class="left">
 			<div class="social-networks">
-				<div><a href="#"><i class="fab fa-youtube"></i></a></div>
-				<div><a href="#"><i class="fab fa-instagram"></i></a></div>
-				<div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+				<a href="#"><div><i class="fab fa-youtube"></i></div></a>
+				<a href="#"><div><i class="fab fa-instagram"></i></div></a>
+				<a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
 			</div>
 			<a href="mailto:itmileschristi@gmail.com">
 				<div class="link">
@@ -19,7 +19,8 @@
 			</a>
 		</div>
 		<div class="center">
-			<h3>Miles Christi<br>Instituto religioso</h3>
+			<h3>Miles Christi</h3>
+			<h3>Instituto religioso</h3>
 		</div>
 		<div class="right">
 			<h6>Sitios de interes</h6>

@@ -143,7 +143,10 @@ footer .left .social-networks {
   text-align: left;
   display: flex;
 }
-footer .left .social-networks div {
+footer .left .social-networks a {
+  color: #393939;
+}
+footer .left .social-networks a div {
   display: flex;
   background-color: #FFF;
   width: 40px;
@@ -153,9 +156,6 @@ footer .left .social-networks div {
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
-}
-footer .left .social-networks div a {
-  color: #393939;
 }
 footer .left a {
   text-decoration: none;
@@ -171,12 +171,14 @@ footer .left a .link svg {
 footer .center {
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
 footer .center h3 {
   font-weight: lighter;
+  margin: 0;
 }
 footer .right {
   text-align: right;
