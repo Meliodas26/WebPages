@@ -92,6 +92,9 @@ header .bottom div {
 .generic-2 .title {
   margin: 0 1rem;
 }
+.generic-2 .title h2 {
+  font-weight: bold;
+}
 .generic-2 .title .center-triangle {
   display: flex;
   align-items: center;
@@ -113,23 +116,36 @@ header .bottom div {
   }
 }
 .events {
-  padding: 1rem 0;
   background-color: #F5F5F5;
+  height: 600px;
 }
-.events .title {
-  border-bottom: #363636 3px solid;
-  display: inline-flex;
+.events .carousel-control-prev {
+  color: black;
 }
-.events .elements {
-  padding: 1rem 0;
-  overflow: auto;
-  white-space: nowrap;
-  background-color: #F5F5F5;
-}
-.events .elements .event {
-  display: inline-block;
+.events .carousel-control-prev .carousel-control-icon {
+  color: black;
 }
 
+/*
+.events{
+	padding: 1rem 0;
+	background-color: #F5F5F5; 
+	background-color: red;
+	.title{
+		border-bottom: #363636 3px solid;
+		display: inline-flex; 
+	}
+	.elements{
+		padding: 1rem 0;
+		overflow: auto;
+		white-space: nowrap;
+		background-color: #F5F5F5;
+		.event{
+			display: inline-block;
+		}
+	}
+}
+*/
 footer {
   background-color: #393939;
   display: flex;
