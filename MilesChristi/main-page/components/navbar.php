@@ -1,4 +1,4 @@
-<nav id="navbar-desktop" style="display:none;">
+<nav class="fade" id="navbar-desktop" style="display:none;">
 	<a href="./"><img src="./assets/img/logo.png" alt="logo"></a>
 	<ul>
 		<a href="#"><li>Inicio</li></a>
