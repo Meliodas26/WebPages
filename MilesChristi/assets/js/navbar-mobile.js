@@ -1,13 +1,14 @@
 var showNavbar = true;
-var header = document.getElementById("header"); 
+var opacity = document.getElementById("opacity"); 
 var nav = document.getElementById("nav-mobile");
-function view_navbar(){	
+function viewNavbar_mobile(){	
 	if(showNavbar){
-		header.style.display = "none";
 		nav.style.display = "flex";
-	}else{
-		header.style.display = "block";
+		opacity.style.display = "none";
+	}
+	else{
 		nav.style.display = "none";
+		opacity.style.display = "block";
 	}
 	showNavbar = !showNavbar;
 }

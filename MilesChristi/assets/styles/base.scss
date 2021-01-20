@@ -1,1 +1,13 @@
-body{margin: 0;}
+body{
+	margin: 0; 
+	background-color: #FFFFFF;
+}
+/*Appear navbar animation*/
+.appear-1{
+	-webkit-animation-name: appear1;
+  -webkit-animation-duration: 1.5s;
+  animation-name: appear-1;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes appear-1 {from {opacity: 0}to {opacity: 1}}
+@keyframes appear-1 {from {opacity: 0} to {opacity: 1}}

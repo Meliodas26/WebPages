@@ -1,67 +1,80 @@
 
 header{
+	position: relative;
 	background-image: url('../img/header.jpg');
-	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 1.5rem 1rem;
-	//opacity: .9;
+	background-position: center;
 	height: 720px;
-	.top{
-		display: flex;
-		.component{
-			width: 100%;
-			.social-networks{
-				height: 70%;
-				text-align: right;
-				a{
-					font-size: 20px;
-					color: #393939;
-					div{
-						display: inline-flex;
-						background-color: #FFF;
-						border-radius: 25px;
-						width: 40px;
-						height: 40px;
-						justify-content: center;
-						align-items: center;
-						margin: 0 5px;
+	.opacity{
+		background: rgba(0, 0, 0, 0.3);
+		height: 720px;
+		.top{
+			padding: 1.5rem 1rem;
+			display: flex;
+			height: 100px;
+			.left{img{width: 300px;}}
+			.right-desktop{
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				.social-networks{
+					display: flex;
+					height: 50%;
+					justify-content: flex-end;
+					a{
+						font-size: 20px;
+						color: #393939;
+						div{
+							display: flex;
+							background-color: #FFF;
+							border-radius: 25px;
+							width: 40px;
+							height: 40px;
+							justify-content: center;
+							align-items: center;
+							margin: 0 5px;
+						}
 					}
 				}
 			}
+			.right-mobile{display: none;}
 		}
-	}
-	.bottom{
-		padding: 1rem;
-		height: 500px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		h1,h3{
+		.bottom{
+			height: 650px;
 			display: flex;
-			color: #FFF;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0 1rem;
+			h1,p{
+				margin: 1rem 0;
+				color: #FFF;
+			}
+			p{text-align: center;}
 		}
-		div{max-width: 80%;}
 	}
 }
 
 @media(max-width: 1200px){
 	header{
-		.social-networks,nav{display: none!important;}
-		.logo{img{width: 175px;}}
-		.component{align-items: center; display: flex; justify-content: flex-end;}
-		.view-nav-mobile{
-			display: inline-block!important;
-			justify-content: end;
-			a{
-				color: #FFF;
-				font-size: 50px;
+		.opacity{
+			.top{
+				height: 50px;
+				.left{img{width: 150px;}}
+				.right-desktop{display: none;}
+				.right-mobile{
+					font-size: 30px;
+					display: flex;
+					width: 100%;
+					justify-content: flex-end;
+					align-items: center;
+					a{color: #FFF;}
+				}
 			}
-		}
-		h1{font-size: calc(1.5em + 1vw); text-align: center;}
-		h3{font-size: calc(.5em + 1vw);}
-		nav{
-			flex-direction: column;
+			.bottom{
+				h1{font-size: calc(1.5em + 1vw);}
+				p{font-size: calc(.5em + 1vw);}
+			}
 		}
 	}
 }
