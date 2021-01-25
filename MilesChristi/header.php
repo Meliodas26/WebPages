@@ -1,4 +1,4 @@
-<header class="appear-1">
+<header>
 	<!--
 		div - Top
 		Include:
@@ -40,4 +40,4 @@
 </header>
 
 <script src="assets/js/navbar-mobile.js"></script>
-<script src="assets/js/navbar-desktop-fixed.js"></script>
+<script src="assets/js/navbar-fixed.js"></script>

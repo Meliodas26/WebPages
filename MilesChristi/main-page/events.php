@@ -4,7 +4,7 @@
 		<h2>Próximos eventos</h2>
 	</div>
 	<div class="slideshow-container">
-		<div class="event mySlides fade">
+		<div class="event mySlides appear-1">
 			<div class="img" style="background-image: url(assets/img/prueba.png);">
 				<div class="tag">Jóvenes-1</div>
 			</div>
@@ -14,7 +14,7 @@
 				<div><a href="#">saber más</a></div>
 			</div>
 		</div>
-		<div class="event mySlides fade">
+		<div class="event mySlides appear-1">
 			<div class="img" style="background-image: url(assets/img/blog.png);">
 				<div class="tag">Jóvenes-2</div>
 			</div>
@@ -24,7 +24,7 @@
 				<div><a href="#">saber más</a></div>
 			</div>
 		</div>
-		<div class="event mySlides fade">
+		<div class="event mySlides appear-1">
 			<div class="img" style="background-image: url(assets/img/header.jpg);">
 				<div class="tag">Jóvenes-3</div>
 			</div>

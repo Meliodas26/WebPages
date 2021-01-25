@@ -17,6 +17,14 @@
 				<?php include("./main-page/components/navbar.php");?>
 			</div>
 		</nav>
+		<nav class="navbar-mobile-fixed appear-1" id="navbar-mobile-fixed">
+			<div class="left">
+				<a href="./"><img src="./assets/img/logo.png" alt="logo"></a>
+			</div>
+			<div class="right">
+				<a onClick="viewNavbar_mobile()"><i class="fas fa-bars"></i></a>
+			</div>
+		</nav>
 		<?php
 			include("./main-page/exercises.php");
 			include("./main-page/events.php");

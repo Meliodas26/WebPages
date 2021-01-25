@@ -394,9 +394,8 @@ nav ul li a {
 .nav-mobile {
   display: none;
   height: 720px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  z-index: 1;
   color: #FFF;
   background-color: #393939;
   flex-direction: column;
@@ -423,6 +422,37 @@ nav ul li a {
 }
 .nav-mobile ul .li-bottom {
   margin-bottom: 0;
+}
+
+.navbar-mobile-fixed {
+  display: none;
+  background-color: #393939;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100px;
+  justify-content: flex-end;
+}
+.navbar-mobile-fixed .left {
+  margin-left: 1rem;
+}
+.navbar-mobile-fixed .left img {
+  width: 150px;
+}
+.navbar-mobile-fixed .right {
+  width: 100%;
+  color: #FFF;
+}
+.navbar-mobile-fixed .right a {
+  margin: 0 1rem;
+  font-size: 30px;
+}
+.navbar-mobile-fixed div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
 @media (max-width: 1200px) {
