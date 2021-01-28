@@ -1,12 +1,20 @@
 var showNavbar = true;
-var header = document.getElementById("header"); 
+var opacity = document.getElementById("opacity"); 
 var nav = document.getElementById("nav-mobile");
-function view_navbar(){	
+//var navFixed = document.getElementById("navbar-mobile-fixed");
+function viewNavbar_mobile(){	
 	if(showNavbar){
-		header.style.display = "none";
+		if(window.pageYOffset<75)
+			opacity.style.display = "none";
+		else
+			document.getElementById("navbar-mobile-fixed").style.display= "none";
 		nav.style.display = "flex";
-	}else{
-		header.style.display = "block";
+	}
+	else{
+		if(window.pageYOffset<75)
+			opacity.style.display = "block";
+		else
+			document.getElementById("navbar-mobile-fixed").style.display= "flex";
 		nav.style.display = "none";
 	}
 	showNavbar = !showNavbar;

@@ -26,8 +26,12 @@
 		}
 	}
 	.information{
-		margin: 1rem;
+		display: flex;
+		flex-direction: column;
+		height: 200px;
 		white-space: normal;
+		h4,div{margin: 1rem;}
+		p{margin: 0 1rem;}
 		div{
 			text-align: right;
 			a{

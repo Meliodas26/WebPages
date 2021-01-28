@@ -1,9 +1,9 @@
 <footer>
 		<div class="left">
 			<div class="social-networks">
-				<a href="#"><div><i class="fab fa-youtube"></i></div></a>
-				<a href="#"><div><i class="fab fa-instagram"></i></div></a>
-				<a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
+				<a href="#"><div class="a-yt"><i class="fab fa-youtube"></i></div></a>
+				<a href="#"><div class="a-insta"><i class="fab fa-instagram"></i></div></a>
+				<a href="#"><div class="a-face"><i class="fab fa-facebook-f"></i></div></a>
 			</div>
 			<a href="mailto:itmileschristi@gmail.com">
 				<div class="link">
