@@ -12,7 +12,7 @@ header{
 			padding: 1.5rem 1rem;
 			display: flex;
 			height: 100px;
-			.left{img{width: 300px;}}
+			.left{img{width: 250px;}}
 			.right-desktop{
 				width: 100%;
 				display: flex;
@@ -24,6 +24,9 @@ header{
 					a{
 						font-size: 20px;
 						color: #393939;
+						&:hover{
+							color: #FFF;
+						}
 						div{
 							display: flex;
 							background-color: #FFF;
@@ -50,7 +53,8 @@ header{
 				margin: 1rem 0;
 				color: #FFF;
 			}
-			p{text-align: center;}
+			h1{font-size: 52px;}
+			p{font-size: 28px; text-align: center; font-weight: 300;}
 		}
 	}
 }
@@ -72,6 +76,7 @@ header{
 				}
 			}
 			.bottom{
+				text-align: center;
 				h1{font-size: calc(1.5em + 1vw);}
 				p{font-size: calc(.5em + 1vw);}
 			}

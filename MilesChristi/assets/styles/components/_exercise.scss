@@ -1,4 +1,4 @@
-.exercise-1,.exercise-2{
+.exercise{
 	margin: 1rem;
 	display: flex;
 	align-items: flex-end;
@@ -10,27 +10,35 @@
 	.information{
 		height: 50%;
 		background-color: rgba(0,0,0,0.5);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 		h3,p,button{color: #fff;}
-		h3,p,button{margin-left: .5rem!important; margin-right: .5rem!important;}
-		h3,button{margin-top: 1rem; margin-bottom: 0;}
-		p{margin-top: 1rem; margin-bottom: 1rem;}
-
+		h3,p,button{margin-left: 1rem!important; margin-right: 1rem!important;}
+		h3{font-size: 24px; font-weight: 800; margin-bottom: 20px}
+		p{font-size: 20px; font-weight:300;}
 		button{
+			margin: 20px;
 			width: 200px;
 			height: 40px;
 			font-weight: bold;
 			background-color: #2374AB;
 			border-radius: 10px;
 			border-width: 0;
+			font-size: 20px;
 		}
 	}
 }
 .exercise-1{background-image: url('../img/prueba.png');}
 .exercise-2{background-image: url('../img/exercise-2.png');}
-@media(max-width: 1199px){
-	.exercise-1,.exercise-2{
-		h3{margin-top: 1rem!important;}
-		button{margin-top: 0!important; margin-bottom: 0!important;}
-		.information{width: 100%;}
+@media(max-width: 1199px){.information{width: 100%;}}
+@media(max-width: 800px){
+	.exercise{
+		.information{
+			h3{font-size: 18px;}
+			p{font-size: 16px;}
+			button{font-size: 16px;}
+		}
 	}
 }
+@media(max-width: 400px){.exercise{h3{margin-bottom: 10px!important;}}}

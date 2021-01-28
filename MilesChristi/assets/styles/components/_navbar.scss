@@ -6,6 +6,11 @@ nav{
 			a{
 				text-decoration: none;
 				color: #FFF;
+				font-size: 20px;
+				font-weight: 300;
+				transition-property: all;
+  			transition-duration: .5s;
+  			transition-timing-function: ease-in;
 			}
 		}
 	}
@@ -38,9 +43,9 @@ nav{
 	top: 0;
 	left: 0;
 	background-color: #393939;
-	height: 150px;
+	height: 100px;
 	justify-content: flex-end;
-	.left{margin-left: 1rem;}
+	.left{margin-left: 1rem;img{height: 70px;}}
 	.div-ul{width: 100%;}
 	div{
 		display: flex;
@@ -69,6 +74,12 @@ nav{
 					border-radius: 5px;
 					width: 130px;
 					height: 50px;
+					&:hover{
+						transition-property: all;
+  					transition-duration: .5s;
+  					transition-timing-function: ease-in;
+						opacity: .8;
+					}
 				}
 			}
 		}

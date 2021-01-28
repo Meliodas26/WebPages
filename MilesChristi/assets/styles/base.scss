@@ -1,6 +1,52 @@
 body{
 	margin: 0; 
 	background-color: #FFFFFF;
+	font-family: 'Raleway', sans-serif !important;
+	h3,p{
+		margin: 0;
+	}
+	a,button{
+		&:hover{
+			transition-property: all;
+  		transition-duration: .5s;
+  		transition-timing-function: ease-in;
+		}
+		div{
+			&:hover{
+				transition-property: all;
+  			transition-duration: .5s;
+  			transition-timing-function: ease-in;
+			}
+		}
+	}
+
+	//Hovers
+	button{
+		&:hover{
+			transition-property: all;
+			transition-duration: .5s;
+			transition-timing-function: ease-in;
+			opacity: .7;
+			cursor: pointer;
+			border-width: 0px;
+		}
+	}
+	//SocialNetworks
+	.a-yt{
+		&:hover{
+			background-color: #FF0000!important;
+		}
+	}
+	.a-insta{
+		&:hover{
+			background-color: #E2609C!important;
+		}
+	}
+	.a-face{
+		&:hover{
+			background-color: #0574E7!important;
+		}
+	}
 }
 /*Appear navbar animation*/
 .appear-1{
