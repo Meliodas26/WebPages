@@ -1,82 +1,14 @@
 .events{
+	padding: 1rem 0;
 	background-color: #F5F5F5;
-	height: 550px;
-	justify-content: center;
-	z-index: 0;
-	.slideshow-container {
-		//max-width: 1000px;
-		margin: 1rem;
-		position: relative;
-		//text-align: center;
-		//display: inline-block;
-		display: flex;
-		justify-content: center;
-		//margin: auto;
+	.elements{
+		padding: 1rem;
+		overflow: auto;
+		white-space: nowrap;
+		background-color: #F5F5F5;
 		.event{
-			//max-width: 200px;
-			//margin: 0 2rem;
-			display: none;
-		}
-		.prev, .next {
-			//margin: 1rem;
-			//width: 1rem;
-			cursor: pointer;
-			position: absolute;
-			//position: fixed;
-			top: 46%;
-			//width: auto;
-			//margin-top: -22px;
-			//padding: 15px;
-			//color: white;
-			color: #363636;
-			font-weight: bold;
-			font-size: 20px;
-			transition: 0.5s ease;
-			border-radius: 0 3px 3px 0;
-			//user-select: none;
-		}
-		/* Position the "next button" to the right */
-		.next {
-		  right: 0;
-		  //border-radius: 3px 0 0 3px;
-		}
-		.prev{left: 0;}
-
-		/* On hover, add a black background color with a little bit see-through */
-		.prev:hover, .next:hover {
-			color: rgba(255,116,116,.5);
+			display: inline-block;
+			margin: 0 1rem;
 		}
 	}
-	/* The dots/bullets/indicators */
-	.dot {
-  	cursor: pointer;
-  	height: 15px;
-  	width: 15px;
-  	margin: 0 2px;
-  	background-color: #363636;
-  	border-radius: 50%;
-  	display: inline-block;
-		transition: background-color 0.6s ease;
-	}
-	.active,.dot:hover {
-		background-color: #FF7474;
-	}		
 }
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-

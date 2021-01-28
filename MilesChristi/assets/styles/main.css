@@ -116,80 +116,20 @@ header .bottom div {
   }
 }
 .events {
+  padding: 1rem 0;
   background-color: #F5F5F5;
-  height: 550px;
-  justify-content: center;
-  z-index: 0;
-  /* The dots/bullets/indicators */
 }
-.events .slideshow-container {
-  margin: 1rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
+.events .elements {
+  padding: 1rem;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: #F5F5F5;
 }
-.events .slideshow-container .event {
-  display: none;
-}
-.events .slideshow-container .prev, .events .slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 46%;
-  color: #363636;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.5s ease;
-  border-radius: 0 3px 3px 0;
-}
-.events .slideshow-container .next {
-  right: 0;
-}
-.events .slideshow-container .prev {
-  left: 0;
-}
-.events .slideshow-container .prev:hover, .events .slideshow-container .next:hover {
-  color: rgba(255, 116, 116, 0.5);
-}
-.events .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #363636;
-  border-radius: 50%;
+.events .elements .event {
   display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.events .active, .events .dot:hover {
-  background-color: #FF7474;
+  margin: 0 1rem;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 footer {
   background-color: #393939;
   display: flex;
@@ -470,21 +410,6 @@ header #nav-mobile ul a li {
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
-  .event {
-    max-width: 80% !important;
-  }
-}
-@media (max-width: 1000px) {
-  .event {
-    max-width: 90%;
-  }
-}
-@media (max-width: 1500px) {
-  .event {
-    width: 95% !important;
-  }
-}
 .blog {
   display: flex;
   height: 300px;

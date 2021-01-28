@@ -1,5 +1,5 @@
 <div class="component event">
-	<div class="img" style="background-image: url(assets/img/event.png);">
+	<div class="img" style="background-image: url(assets/img/prueba.png);">
 		<div class="tag">Jóvenes</div>
 	</div>
 	<div class="information">
